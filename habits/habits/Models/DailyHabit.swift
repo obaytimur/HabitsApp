@@ -24,11 +24,29 @@ struct DailyHabit: Identifiable, Codable {
 }
 
 extension DailyHabit {
+    static var emptyHabit: DailyHabit {
+        DailyHabit(name: "", desc: "", length: 0, theme: .sky)
+    }
+}
+
+extension DailyHabit {
     static let sampleData: [DailyHabit] =
     [
-        DailyHabit(name: "100 DoS", desc: "Do the next day in the 100 days of swift challange", length: 60, theme: .yellow),
-        DailyHabit(name: "Do Project", desc: "Contribute at least four commits to projects", length: 120, theme: .indigo),
-        DailyHabit(name: "Do Sports", desc: "Do at least 1 hour of sports", length: 60, theme: .magenta),
-        DailyHabit(name: "Make Bed", desc: "Who can be successfull if they do not even make their bed", length: 2, theme: .purple),
+        DailyHabit(name: "100 DoS",
+                   desc: "Do the next day in the 100 days of swift challange",
+                   length: 60,
+                   theme: .bubblegum),
+        DailyHabit(name: "Do Project",
+                   desc: "Contribute at least four commits to projects",
+                   length: 120,
+                   theme: .buttercup),
+        DailyHabit(name: "Do Sports",
+                   desc: "Do at least 1 hour of sports",
+                   length: 60,
+                   theme: .indigo),
+        DailyHabit(name: "Make Bed",
+                   desc: "Who can be successfull if they do not even make their bed",
+                   length: 2,
+                   theme: .orange)
     ]
 }

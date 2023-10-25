@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE8368522AE987B8003AD3BF /* newHabitSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8368512AE987B8003AD3BF /* newHabitSheet.swift */; };
 		EED53FE52AE93F2900718919 /* habitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED53FE42AE93F2900718919 /* habitsApp.swift */; };
 		EED53FE92AE93F2900718919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED53FE82AE93F2900718919 /* Assets.xcassets */; };
 		EED53FEC2AE93F2900718919 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED53FEB2AE93F2900718919 /* Preview Assets.xcassets */; };
@@ -14,10 +15,11 @@
 		EED540002AE93F2900718919 /* habitsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED53FFF2AE93F2900718919 /* habitsUITests.swift */; };
 		EED540022AE93F2900718919 /* habitsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED540012AE93F2900718919 /* habitsUITestsLaunchTests.swift */; };
 		EED540112AE93FF400718919 /* cardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED540102AE93FF400718919 /* cardView.swift */; };
-		EED540132AE9406B00718919 /* theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED540122AE9406B00718919 /* theme.swift */; };
+		EED540132AE9406B00718919 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED540122AE9406B00718919 /* Theme.swift */; };
 		EED540152AE9409800718919 /* DailyHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED540142AE9409800718919 /* DailyHabit.swift */; };
 		EED540172AE9495500718919 /* HabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED540162AE9495500718919 /* HabitsView.swift */; };
 		EED540192AE94B0900718919 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED540182AE94B0900718919 /* DetailView.swift */; };
+		EED5401B2AE9698400718919 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5401A2AE9698400718919 /* ThemeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE8368512AE987B8003AD3BF /* newHabitSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newHabitSheet.swift; sourceTree = "<group>"; };
 		EED53FE12AE93F2900718919 /* habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED53FE42AE93F2900718919 /* habitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = habitsApp.swift; sourceTree = "<group>"; };
 		EED53FE82AE93F2900718919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,10 +51,11 @@
 		EED53FFF2AE93F2900718919 /* habitsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = habitsUITests.swift; sourceTree = "<group>"; };
 		EED540012AE93F2900718919 /* habitsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = habitsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EED540102AE93FF400718919 /* cardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardView.swift; sourceTree = "<group>"; };
-		EED540122AE9406B00718919 /* theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theme.swift; sourceTree = "<group>"; };
+		EED540122AE9406B00718919 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		EED540142AE9409800718919 /* DailyHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHabit.swift; sourceTree = "<group>"; };
 		EED540162AE9495500718919 /* HabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsView.swift; sourceTree = "<group>"; };
 		EED540182AE94B0900718919 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		EED5401A2AE9698400718919 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +144,10 @@
 			isa = PBXGroup;
 			children = (
 				EED540102AE93FF400718919 /* cardView.swift */,
-				EED540162AE9495500718919 /* HabitsView.swift */,
 				EED540182AE94B0900718919 /* DetailView.swift */,
+				EED540162AE9495500718919 /* HabitsView.swift */,
+				EED5401A2AE9698400718919 /* ThemeView.swift */,
+				EE8368512AE987B8003AD3BF /* newHabitSheet.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -149,7 +155,7 @@
 		EED5400F2AE93F4F00718919 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EED540122AE9406B00718919 /* theme.swift */,
+				EED540122AE9406B00718919 /* Theme.swift */,
 				EED540142AE9409800718919 /* DailyHabit.swift */,
 			);
 			path = Models;
@@ -286,8 +292,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED540112AE93FF400718919 /* cardView.swift in Sources */,
+				EE8368522AE987B8003AD3BF /* newHabitSheet.swift in Sources */,
+				EED5401B2AE9698400718919 /* ThemeView.swift in Sources */,
 				EED540192AE94B0900718919 /* DetailView.swift in Sources */,
-				EED540132AE9406B00718919 /* theme.swift in Sources */,
+				EED540132AE9406B00718919 /* Theme.swift in Sources */,
 				EED540152AE9409800718919 /* DailyHabit.swift in Sources */,
 				EED540172AE9495500718919 /* HabitsView.swift in Sources */,
 				EED53FE52AE93F2900718919 /* habitsApp.swift in Sources */,

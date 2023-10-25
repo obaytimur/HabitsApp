@@ -29,11 +29,11 @@ struct cardView: View {
     }
 }
 
-struct cardView_Previews: PreviewProvider{
+struct cardView_Previews: PreviewProvider {
     static var habit = DailyHabit.sampleData[0]
     static var previews: some View{
         cardView(habit: habit)
-            .previewLayout(.fixed(width: 400, height: 60))
             .background(habit.theme.mainColor)
+            .previewLayout(.fixed(width: 400, height: 60))
     }
 }

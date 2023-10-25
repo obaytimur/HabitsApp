@@ -12,7 +12,13 @@ struct DetailView: View {
     
     var body: some View {
         List {
-            
+            Section(header: Text("Habit Info")){
+                Text(habit.desc)
+                    .foregroundColor(habit.theme.mainColor)
+                Spacer()
+                Text(habit.theme.name)
+                    .foregroundColor(habit.theme.mainColor)
+            }
         }
         .navigationTitle(habit.name)
         .toolbar{
