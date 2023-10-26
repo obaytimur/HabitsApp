@@ -21,6 +21,7 @@
 		EED540192AE94B0900718919 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED540182AE94B0900718919 /* DetailView.swift */; };
 		EED5401B2AE9698400718919 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5401A2AE9698400718919 /* ThemeView.swift */; };
 		EEF7D2C42AEAFD94009C7BF4 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7D2C32AEAFD94009C7BF4 /* EditView.swift */; };
+		EEF7D2C62AEB0734009C7BF4 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7D2C52AEB0734009C7BF4 /* ThemePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		EED540182AE94B0900718919 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		EED5401A2AE9698400718919 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		EEF7D2C32AEAFD94009C7BF4 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		EEF7D2C52AEB0734009C7BF4 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				EED5401A2AE9698400718919 /* ThemeView.swift */,
 				EE8368512AE987B8003AD3BF /* newHabitSheet.swift */,
 				EEF7D2C32AEAFD94009C7BF4 /* EditView.swift */,
+				EEF7D2C52AEB0734009C7BF4 /* ThemePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				EED540112AE93FF400718919 /* cardView.swift in Sources */,
 				EE8368522AE987B8003AD3BF /* newHabitSheet.swift in Sources */,
 				EED5401B2AE9698400718919 /* ThemeView.swift in Sources */,
+				EEF7D2C62AEB0734009C7BF4 /* ThemePicker.swift in Sources */,
 				EED540192AE94B0900718919 /* DetailView.swift in Sources */,
 				EED540132AE9406B00718919 /* Theme.swift in Sources */,
 				EEF7D2C42AEAFD94009C7BF4 /* EditView.swift in Sources */,

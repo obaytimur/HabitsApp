@@ -14,6 +14,7 @@ struct EditView: View {
             Section(header: Text("Habit Info")) {
                 TextField("Name", text: $habit.name)
                 TextField("Description", text: $habit.desc)
+                ThemePicker(selection: $habit.theme)
             }
         }
     }
