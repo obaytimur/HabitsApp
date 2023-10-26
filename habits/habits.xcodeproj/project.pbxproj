@@ -20,6 +20,7 @@
 		EED540172AE9495500718919 /* HabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED540162AE9495500718919 /* HabitsView.swift */; };
 		EED540192AE94B0900718919 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED540182AE94B0900718919 /* DetailView.swift */; };
 		EED5401B2AE9698400718919 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5401A2AE9698400718919 /* ThemeView.swift */; };
+		EEF7D2C42AEAFD94009C7BF4 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7D2C32AEAFD94009C7BF4 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		EED540162AE9495500718919 /* HabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsView.swift; sourceTree = "<group>"; };
 		EED540182AE94B0900718919 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		EED5401A2AE9698400718919 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		EEF7D2C32AEAFD94009C7BF4 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				EED540162AE9495500718919 /* HabitsView.swift */,
 				EED5401A2AE9698400718919 /* ThemeView.swift */,
 				EE8368512AE987B8003AD3BF /* newHabitSheet.swift */,
+				EEF7D2C32AEAFD94009C7BF4 /* EditView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				EED5401B2AE9698400718919 /* ThemeView.swift in Sources */,
 				EED540192AE94B0900718919 /* DetailView.swift in Sources */,
 				EED540132AE9406B00718919 /* Theme.swift in Sources */,
+				EEF7D2C42AEAFD94009C7BF4 /* EditView.swift in Sources */,
 				EED540152AE9409800718919 /* DailyHabit.swift in Sources */,
 				EED540172AE9495500718919 /* HabitsView.swift in Sources */,
 				EED53FE52AE93F2900718919 /* habitsApp.swift in Sources */,

@@ -8,13 +8,34 @@
 import SwiftUI
 
 struct newHabitSheet: View {
+    @State private var newHabit = DailyHabit.emptyHabit
+    @Binding var habits: [DailyHabit]
+    @Binding var isPresentingNewHabitView: Bool
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            EditView(habit: $newHabit)
+                .toolbar{
+                    ToolbarItem(placement: .cancellationAction) {
+                        Button("Dismiss"){
+                            isPresentingNewHabitView = false
+                        }
+                    }
+                }
+                .toolbar{
+                    ToolbarItem(placement: .confirmationAction) {
+                        Button("Add"){
+                            habits.append(newHabit)
+                            isPresentingNewHabitView = false
+                        }
+                    }
+                }
+        }
     }
 }
 
 struct newHabitSheet_Previews: PreviewProvider{
     static var previews: some View{
-        newHabitSheet()
+        newHabitSheet(habits: .constant(DailyHabit.sampleData), isPresentingNewHabitView: .constant(true))
     }
 }

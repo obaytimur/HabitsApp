@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HabitsView: View {
     @Binding var habits: [DailyHabit]
+    @Environment(\.scenePhase) private var scenePhase
+    @State private var isPresentingNewHabitSheet = false
     var body: some View {
         NavigationStack{
             List($habits) {$habit in
@@ -20,12 +22,15 @@ struct HabitsView: View {
             .navigationTitle("Daily Habits")
             .toolbar{
                 Button(action: {
-                    
+                    isPresentingNewHabitSheet = true
                 }) {
                     Image(systemName: "plus")
                 }
                 .accessibilityLabel("New Habits")
             }
+        }
+        .sheet(isPresented: $isPresentingNewHabitSheet) {
+            newHabitSheet(habits: $habits, isPresentingNewHabitView: $isPresentingNewHabitSheet)
         }
     }
 }
