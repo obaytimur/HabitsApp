@@ -11,6 +11,7 @@ struct HabitsView: View {
     @Binding var habits: [DailyHabit]
     @Environment(\.scenePhase) private var scenePhase
     @State private var isPresentingNewHabitSheet = false
+    @State private var isEditButtonPressed = false
     var body: some View {
         NavigationStack{
             List($habits) {$habit in
@@ -21,6 +22,17 @@ struct HabitsView: View {
                                 print("Delete Item")
                             } label: {
                                 Label("Delete", systemImage: "trash")
+                            }
+                        }
+                        .swipeActions(edge: .leading){
+                            NavigationLink(destination: EditView(habit: $habit)){
+                                Button{
+                                    
+                                } label: {
+                                    Label("Edit", systemImage: "ellipsis")
+                                        .symbolVariant(.circle)
+                                }
+                                .tint(.accentColor)
                             }
                         }
                 }
