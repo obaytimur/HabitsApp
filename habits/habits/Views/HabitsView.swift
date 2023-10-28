@@ -16,6 +16,13 @@ struct HabitsView: View {
             List($habits) {$habit in
                 NavigationLink(destination: DetailView(habit: $habit)){
                     cardView(habit: habit)
+                        .swipeActions {
+                            Button(role: .destructive){
+                                print("Delete Item")
+                            } label: {
+                                Label("Delete", systemImage: "trash")
+                            }
+                        }
                 }
                 .listRowBackground(habit.theme.mainColor)
             }
