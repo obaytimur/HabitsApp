@@ -36,7 +36,13 @@ struct HabitsView: View {
                             }
                         }
                 }
-                .listRowBackground(habit.theme.mainColor)
+                .listRowSeparator(.hidden)
+                .listRowBackground(
+                RoundedRectangle(cornerRadius: 5)
+                    .padding(EdgeInsets(
+                    top: 5, leading: 10, bottom: 5, trailing: 10))
+                    .foregroundColor(habit.theme.mainColor)
+                )
             }
             .navigationTitle("Daily Habits")
             .toolbar{
