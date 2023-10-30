@@ -16,7 +16,7 @@ struct cardView: View {
                 .accessibilityAddTraits(.isHeader)
             Spacer()
             HStack {
-                Label(habit.desc, systemImage: "note")
+                Label(habit.desc, systemImage: "\(habit.icon)")
                     .accessibilityLabel(habit.desc)
                 Spacer()
                 Label("\(habit.length)", systemImage: "clock")

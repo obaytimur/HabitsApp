@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE7F67B22AF005A100B6CAF8 /* SymbolPicker in Frameworks */ = {isa = PBXBuildFile; productRef = EE7F67B12AF005A100B6CAF8 /* SymbolPicker */; };
+		EE7F67B42AF009DE00B6CAF8 /* IconPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7F67B32AF009DE00B6CAF8 /* IconPicker.swift */; };
 		EE8368522AE987B8003AD3BF /* newHabitSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8368512AE987B8003AD3BF /* newHabitSheet.swift */; };
 		EED53FE52AE93F2900718919 /* habitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED53FE42AE93F2900718919 /* habitsApp.swift */; };
 		EED53FE92AE93F2900718919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED53FE82AE93F2900718919 /* Assets.xcassets */; };
@@ -42,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE7F67B32AF009DE00B6CAF8 /* IconPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconPicker.swift; sourceTree = "<group>"; };
 		EE8368512AE987B8003AD3BF /* newHabitSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newHabitSheet.swift; sourceTree = "<group>"; };
 		EED53FE12AE93F2900718919 /* habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED53FE42AE93F2900718919 /* habitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = habitsApp.swift; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7F67B22AF005A100B6CAF8 /* SymbolPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +158,7 @@
 				EE8368512AE987B8003AD3BF /* newHabitSheet.swift */,
 				EEF7D2C32AEAFD94009C7BF4 /* EditView.swift */,
 				EEF7D2C52AEB0734009C7BF4 /* ThemePicker.swift */,
+				EE7F67B32AF009DE00B6CAF8 /* IconPicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +188,9 @@
 			dependencies = (
 			);
 			name = habits;
+			packageProductDependencies = (
+				EE7F67B12AF005A100B6CAF8 /* SymbolPicker */,
+			);
 			productName = habits;
 			productReference = EED53FE12AE93F2900718919 /* habits.app */;
 			productType = "com.apple.product-type.application";
@@ -255,6 +263,9 @@
 				Base,
 			);
 			mainGroup = EED53FD82AE93F2800718919;
+			packageReferences = (
+				EE7F67B02AF005A100B6CAF8 /* XCRemoteSwiftPackageReference "SymbolPicker" */,
+			);
 			productRefGroup = EED53FE22AE93F2900718919 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,6 +310,7 @@
 			files = (
 				EED540112AE93FF400718919 /* cardView.swift in Sources */,
 				EE8368522AE987B8003AD3BF /* newHabitSheet.swift in Sources */,
+				EE7F67B42AF009DE00B6CAF8 /* IconPicker.swift in Sources */,
 				EED5401B2AE9698400718919 /* ThemeView.swift in Sources */,
 				EEF7D2C62AEB0734009C7BF4 /* ThemePicker.swift in Sources */,
 				EED540192AE94B0900718919 /* DetailView.swift in Sources */,
@@ -630,6 +642,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE7F67B02AF005A100B6CAF8 /* XCRemoteSwiftPackageReference "SymbolPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xnth97/SymbolPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE7F67B12AF005A100B6CAF8 /* SymbolPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE7F67B02AF005A100B6CAF8 /* XCRemoteSwiftPackageReference "SymbolPicker" */;
+			productName = SymbolPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EED53FD92AE93F2800718919 /* Project object */;
 }

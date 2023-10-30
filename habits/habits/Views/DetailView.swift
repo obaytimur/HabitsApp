@@ -9,21 +9,42 @@ import SwiftUI
 
 struct DetailView: View {
     @Binding var habit: DailyHabit
+    @State private var isEditViewPreviewed = false
     
     var body: some View {
         List {
             Section(header: Text("Habit Info")){
                 Text(habit.desc)
-                    .foregroundColor(habit.theme.mainColor)
-                Spacer()
-                Text(habit.theme.name)
-                    .foregroundColor(habit.theme.mainColor)
+                HStack{
+                    Text("Colour: ")
+                    Spacer()
+                    Text(habit.theme.name)
+                }                
+                Text("Icon: \(Image(systemName: habit.icon))")
             }
+            .foregroundColor(habit.theme.mainColor)
         }
         .navigationTitle(habit.name)
         .toolbar{
             Button("Edit"){
-                
+                isEditViewPreviewed = true
+            }
+        }
+        .sheet(isPresented: $isEditViewPreviewed) {
+            NavigationStack{
+                EditView(habit: $habit)
+                    .toolbar{
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Dismiss"){
+                                isEditViewPreviewed = false
+                            }
+                        }
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Done"){
+                                isEditViewPreviewed = false
+                            }
+                        }
+                    }
             }
         }
     }

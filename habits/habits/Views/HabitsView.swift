@@ -36,6 +36,7 @@ struct HabitsView: View {
                             }
                         }
                 }
+                .frame(maxHeight: 70)
                 .listRowSeparator(.hidden)
                 .listRowBackground(
                 RoundedRectangle(cornerRadius: 5)
