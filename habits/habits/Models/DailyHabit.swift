@@ -27,7 +27,7 @@ struct DailyHabit: Identifiable, Codable {
 
 extension DailyHabit {
     static var emptyHabit: DailyHabit {
-        DailyHabit(name: "", desc: "", length: 0, theme: .sky, icon: "notes")
+        DailyHabit(name: "", desc: "", length: 0, theme: .sky, icon: "note")
     }
 }
 

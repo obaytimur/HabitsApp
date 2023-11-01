@@ -41,7 +41,7 @@ struct HabitsView: View {
                 .listRowBackground(
                 RoundedRectangle(cornerRadius: 5)
                     .padding(EdgeInsets(
-                    top: 5, leading: 10, bottom: 5, trailing: 10))
+                    top: 5, leading: 0, bottom: 5, trailing: 0))
                     .foregroundColor(habit.theme.mainColor)
                 )
             }

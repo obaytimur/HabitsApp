@@ -43,9 +43,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EE8D8D532AF0F21C00BC27C3 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		EE7F67B32AF009DE00B6CAF8 /* IconPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconPicker.swift; sourceTree = "<group>"; };
 		EE8368512AE987B8003AD3BF /* newHabitSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newHabitSheet.swift; sourceTree = "<group>"; };
+		EE8D8D402AF0F21B00BC27C3 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		EE8D8D422AF0F21B00BC27C3 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		EE8D8D572AF0F6F400BC27C3 /* habits.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = habits.entitlements; sourceTree = "<group>"; };
 		EED53FE12AE93F2900718919 /* habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED53FE42AE93F2900718919 /* habitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = habitsApp.swift; sourceTree = "<group>"; };
 		EED53FE82AE93F2900718919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,12 +107,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE8D8D3F2AF0F21B00BC27C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE8D8D402AF0F21B00BC27C3 /* WidgetKit.framework */,
+				EE8D8D422AF0F21B00BC27C3 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EED53FD82AE93F2800718919 = {
 			isa = PBXGroup;
 			children = (
 				EED53FE32AE93F2900718919 /* habits */,
 				EED53FF42AE93F2900718919 /* habitsTests */,
 				EED53FFE2AE93F2900718919 /* habitsUITests */,
+				EE8D8D3F2AF0F21B00BC27C3 /* Frameworks */,
 				EED53FE22AE93F2900718919 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,6 +140,7 @@
 		EED53FE32AE93F2900718919 /* habits */ = {
 			isa = PBXGroup;
 			children = (
+				EE8D8D572AF0F6F400BC27C3 /* habits.entitlements */,
 				EED5400F2AE93F4F00718919 /* Models */,
 				EED5400E2AE93F4700718919 /* Views */,
 				EED53FE42AE93F2900718919 /* habitsApp.swift */,
@@ -182,6 +209,7 @@
 				EED53FDD2AE93F2800718919 /* Sources */,
 				EED53FDE2AE93F2800718919 /* Frameworks */,
 				EED53FDF2AE93F2800718919 /* Resources */,
+				EE8D8D532AF0F21C00BC27C3 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -477,11 +505,14 @@
 		EED540062AE93F2900718919 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = habits/habits.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"habits/Preview Content\"";
+				DEVELOPMENT_TEAM = S5ZBBP3832;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -505,11 +536,14 @@
 		EED540072AE93F2900718919 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = habits/habits.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"habits/Preview Content\"";
+				DEVELOPMENT_TEAM = S5ZBBP3832;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
